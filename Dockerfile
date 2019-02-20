@@ -6,7 +6,7 @@ RUN mkdir /app/notebooks
 RUN conda config --set ssl_verify False
 RUN conda install -c anaconda tensorflow
 RUN conda install -c anaconda pandas
-RUN conda install -c anaconda hdbscan
+RUN conda install -c conda-forge hdbscan
 
 EXPOSE 8888
 
